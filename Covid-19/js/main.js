@@ -8,11 +8,6 @@ form.addEventListener('submit', function(e){
     covidResult(url);
     })
 
-    // async function covidResult(url){
-    //     let response = await fetch(url);
-    //     let data = await response.json()
-    //     console.log(data);
-    // }
 
 async function covidResult(url){
     try{
@@ -21,7 +16,6 @@ async function covidResult(url){
             throw "Country not found";
         }
         const covidData = await response.json();
-        console.log(covidData);
         const length = covidData.length;
         const index = length - 1;
 
