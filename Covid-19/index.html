@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no"> 
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <title>Covid-19 Web App</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <section id="sectionForm">
+        <h2>Covid-19 Web App</h2><br/>
+        <form id="myForm">
+            <input type="text" id="country" placeholder="Enter a country name" autocomplete="off" required>
+            <br/><br/>
+            <input type="submit" value="Get Results">
+        </form><br/>
+        <div class="confirmedCases">
+            <h3>Confirmed Cases : <span id="confirmedCases" class="textConfirmed"></span> </h3>
+        </div>
+        <div class="recoveredCases">
+            <h3>Recovered Cases : <span id="recoveredCases" class="textRecovered"></span> </h3>
+            </div>
+            <div class="deathCases">
+                <h3>Death Cases : <span id="deathCases" class="textDeath"></span> </h3>
+                </div>
+               
+    </section>
+    <section id="sectionBubbles">
+        <div class="bubbles">
+            <img src="images/virus_1.png" alt="">
+            <img src="images/virus_2.png" alt="">
+            <img src="images/virus_3.png" alt="">
+            <img src="images/virus_4.png" alt="">
+            <img src="images/virus_5.png" alt="">
+            <img src="images/virus_6.png" alt="">
+            <img src="images/virus_7.png" alt="">
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

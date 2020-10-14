@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+h2{
+    font-size: 2rem;
+}
+body{
+    background: url('../images/hand_bg.png'), #C4BEC8;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    text-shadow: 4px 2px #0F5295;
+    color: #fff;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#1616314f;
+}
+section{
+    position: relative;
+    padding: 20px;
+}
+#sectionForm{
+    background-color: #80808040;
+}
+input[type=text],[type=submit] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 2em / 5em;
+    outline: none;
+  }
+.textDeath{
+    color: lightcoral;
+}
+.textRecovered{
+    color: lightgreen;
+}
+.textConfirmed{
+    color: gold;
+}
+.bubbles img{
+width: 50px;
+animation: bubble 7s linear infinite;
+}
+.bubbles, #sectionBubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: -1;
+    bottom: -70;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 100px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 5s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 120px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width: 75px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 16s;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 10s;
+    width: 140px;
+}
+
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 1rem;
+    }
+  }
