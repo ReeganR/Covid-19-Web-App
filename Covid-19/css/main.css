@@ -41,6 +41,12 @@ input[type=text],[type=submit] {
     font-size: 1rem;
     border-radius: 2em / 5em;
     outline: none;
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  input[type=text],[type=submit]:hover {
+    box-shadow:inset 0 0 5px 5px #888;
+    background: #fff;
   }
 .textDeath{
     color: lightcoral;
