@@ -16,7 +16,7 @@ body{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
-    text-shadow: 4px 2px #0F5295;
+    text-shadow: 2px 1px #0F5295;
     color: #fff;
     overflow: hidden;
     min-height: 100vh;
@@ -31,7 +31,18 @@ section{
     padding: 20px;
 }
 #sectionForm{
-    background-color: #80808040;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#sectionForm::after{
+   content: '';
+   position: absolute;
+   top: 12px;
+   bottom: 12px;
+   left: 12px;
+   right: 12px;
+   border-radius: 5px;
+   pointer-events: none;
+   background:linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%)
 }
 input[type=text],[type=submit] {
     width: 100%;
@@ -43,10 +54,11 @@ input[type=text],[type=submit] {
     outline: none;
     cursor: pointer;
     transition: 0.5s all;
+    background-color: transparent;
   }
   input[type=text],[type=submit]:hover {
-    box-shadow:inset 0 0 5px 5px #888;
-    background: #fff;
+    box-shadow:inset 0 0 2px 2px #888;
+    background:linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%)
   }
 .textDeath{
     color: lightcoral;
