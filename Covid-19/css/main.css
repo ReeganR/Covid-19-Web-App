@@ -127,7 +127,7 @@ animation: bubble 7s linear infinite;
     width: 140px;
 }
 
-  /* On screens that are 600px or less, set the background color to olive */
+  /* On screens that are 600px or less*/
 @media screen and (max-width: 600px) {
     html{
         font-size: 1rem;
